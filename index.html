@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quote</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url('marsphoto.jpeg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      
+      .quote-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .quote {
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+        width: 80%;
+        max-width: 600px;
+      }
+      
+      /* Media queries for responsive design */
+      @media screen and (max-width: 768px) {
+        .quote {
+          font-size: 24px;
+          width: 90%;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .quote {
+          font-size: 20px;
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quote-container">
+      <div class="quote">
+        <p>I would like to die on Mars, Just not on impact.</p>
+        <p>- Elon Musk</p>
+      </div>
+    </div>
+  </body>
+</html>
